@@ -1,6 +1,5 @@
 {
   "dependencies": {
     "imdb-api": "^2.2.0",
-    "require": "^2.4.20"
   }
 }
