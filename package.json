@@ -2,5 +2,30 @@
   "dependencies": {
     "express": "^4.14.0",
     "imdb-api": "^2.2.0"
-  }
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "name": "reeldeal",
+  "version": "1.0.0",
+  "description": "A web app for a movie theater website.",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sutherlandon/reeldealtheater.git"
+  },
+  "keywords": [
+    "movie",
+    "theater"
+  ],
+  "author": "Landon Sutherland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sutherlandon/reeldealtheater/issues"
+  },
+  "homepage": "https://github.com/Sutherlandon/reeldealtheater#readme"
 }
