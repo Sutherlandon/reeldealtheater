@@ -60,15 +60,52 @@
   </h1>
 </div>
 
+<style>
+  .date-bar {
+    margin-bottom: 2em;
+    background: #6b9ce7;
+    color: white;
+    text-align: center;
+  }
+  .date-selector {
+    border-right: 1px solid #fbfbfb;
+    box-sizing: border-box;
+    width: 14.2857%;
+  }
+</style>
+
 <div class="l-content">
   <h1 style="text-align: center">Now Showing</h1>
+    <div class="pure-g date-bar">
+      <div class="pure-u-1 pure-u-md-1-6 date-selector">
+        <p>Sunday</p><h2>1/08</h2>
+      </div>
+      <div class="pure-u-1 pure-u-md-1-6 date-selector">
+        <p>Monday</p><h2>1/09</h2>
+      </div>
+      <div class="pure-u-1 pure-u-md-1-6 date-selector">
+        <p>Tuesday</p><h2>1/10</h2>
+      </div>
+      <div class="pure-u-1 pure-u-md-1-6 date-selector">
+        <p>Wednesday</p><h2>1/11</h2>
+      </div>
+      <div class="pure-u-1 pure-u-md-1-6 date-selector">
+        <p>Thursday</p><h2>1/12</h2>
+      </div>
+      <div class="pure-u-1 pure-u-md-1-6 date-selector">
+        <p>Friday</p><h2>1/06</h2>
+      </div>
+      <div class="pure-u-1 pure-u-md-1-6 date-selector">
+        <p>Saturday</p><h2>1/07</h2>
+      </div>
+  </div>
   <div class="pure-g">
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-      <div class="pricing-table" style="padding-bottom: 0px">
-        <div class="poster-image">
+      <div id="p1" class="pricing-table" style="padding-bottom: 0px; margin: 0 0.5em 2em"
+        onclick="document.getElementById('p1').style.display='none';">
           <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SX400.jpg" style="width: 100%"/>
-        </div>
         <ul class="pricing-table-list">
+          <li>PG-13&nbsp&nbsp|&nbsp&nbsp133m</li>
           <li>Click for Showtimes</li>
         </ul>
       </div>
@@ -79,6 +116,7 @@
           <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SX400.jpg" style="width: 100%"/>
         </div>
         <ul class="pricing-table-list">
+          <li>PG-13&nbsp&nbsp|&nbsp&nbsp133m</li>
           <li>Click for Showtimes</li>
         </ul>
       </div>
@@ -89,6 +127,7 @@
           <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SX400.jpg" style="width: 100%"/>
         </div>
         <ul class="pricing-table-list">
+          <li>PG-13&nbsp&nbsp|&nbsp&nbsp133m</li>
           <li>Click for Showtimes</li>
         </ul>
       </div>
@@ -99,6 +138,7 @@
           <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SX400.jpg" style="width: 100%"/>
         </div>
         <ul class="pricing-table-list">
+          <li>PG-13&nbsp&nbsp|&nbsp&nbsp133m</li>
           <li>Click for Showtimes</li>
         </ul>
       </div>
@@ -161,7 +201,7 @@
             Tickets can be purchased the day of show or as early as the Tuesday
             before a show that is to be played that week. Free admission on your
             birthday with proof of birth date. Gift cards make the perfect gift
-            and can be purchased for any amount from the box office
+            and can be purchased for any amount from the box office.
           </p>
         </div>
       </div>
@@ -172,7 +212,7 @@
           <thead>
             <tr>
               <th>2D</th>
-              <th>Matinee<br>(Before 6pm)</th>
+              <th>Matinee</th>
               <th>Evening</th>
             </tr>
           </thead>
@@ -204,7 +244,7 @@
           <thead>
             <tr>
               <th>3D</th>
-              <th>Matinee<br>(Before 6pm)</th>
+              <th>Matinee</th>
               <th>Evening</th>
             </tr>
           </thead>
@@ -228,6 +268,15 @@
             </tr>
           </tbody>
         </table>
+      </div>
+    </div>
+    <div class="pure-u-1">
+      <div class="l-box">
+        <div style="max-width: 450px; margin: auto; text-align: center">
+          <p>
+            <b>Note:</b> A matinee is any show before <b>6pm</b>
+          </p>
+        </div>
       </div>
     </div>
   </div>
