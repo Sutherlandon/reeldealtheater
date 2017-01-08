@@ -21,6 +21,14 @@ app.get('/movie/:title', function (req, res) {
   });
 });
 
+// gets movie meta-data based on title from the imbd-api
+app.get('/movie/:title/:year', function (req, res) {
+  imdb.getReq({name: req.params.title,
+              year: req.params.year}, (err, data) => {
+    res.send(data);
+  });
+});
+
 // fires up the server to listen on port 3000
 app.listen(3000, function () {
   console.log('ReelDeal running (port: 3000)');
