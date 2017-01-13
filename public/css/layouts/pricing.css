@@ -45,7 +45,8 @@ p {
  */
 
 .banner {
-    background: transparent url('/img/IMG_7142.JPG') 0 0 no-repeat fixed;
+    /*background: transparent url('/img/IMG_7142.JPG') 0 0 no-repeat fixed;*/
+    background: transparent url('/img/IMG_7365.JPG') 0 0 no-repeat fixed;
     text-align: center;
     background-size: cover;
     height: 200px;
