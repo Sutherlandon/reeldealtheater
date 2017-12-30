@@ -1,12 +1,54 @@
+#page-content {
+  margin: 0 auto;
+  max-width: 970px;
+}
+
 #movie-grid {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 1em;
+
+  .rating {
+    min-width: 3em;
+  }
+}
+
+#ticket-info {
+  display: grid;
+  grid-gap: 1em;
+  padding: 1em;
+  grid-template-areas: "title title"
+                       "desc desc"
+                       "2D 3D";
+
+  .info-title { grid-area: title; }
+  .info-desc { grid-area: desc; }
+  #2D { grid-area: 2D; }
+  #3D { grid-area: 3D; }
+}
+
+#theater-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
+  padding: 0 2em 2em 2em;
+
+  .section-title {
+    color: black;
+    font-weight: 500;
+  }
 }
 
 @media (max-width: 625px) {
   #movie-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  #ticket-info {
+    grid-template-areas: "title"
+                         "desc"
+                         "2D"
+                         "3D";
   }
 }
