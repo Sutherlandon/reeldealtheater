@@ -12,14 +12,7 @@
 .pure-u-md-1-7 {
   width: 14.2857%;
 }
-.lg-date-menu {
-  margin-bottom: 2em;
-  background: #6b9ce7;
-  color: white;
-  text-align: center;
-}
 .sm-date-menu {
-  display: none;
   margin-bottom: 2em;
   text-align: center;
 }
@@ -58,13 +51,4 @@
 .movie-poster img {
   display: block;
   width: 100%;
-}
-
-@media (max-width: 767px) {
-  .lg-date-menu {
-    display: none;
-  }
-  .sm-date-menu {
-    display: block;
-  }
 }

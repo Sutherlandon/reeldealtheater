@@ -1,6 +1,8 @@
+@content-width: 970px;
+
 #page-content {
   margin: 0 auto;
-  max-width: 970px;
+  max-width: @content-width;
 }
 
 #movie-grid {
@@ -16,7 +18,8 @@
 
 #ticket-info {
   display: grid;
-  grid-gap: 1em;
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
   padding: 1em;
   grid-template-areas: "title title"
                        "desc desc"
@@ -26,6 +29,10 @@
   .info-desc { grid-area: desc; }
   #2D { grid-area: 2D; }
   #3D { grid-area: 3D; }
+
+  p {
+    margin: 0;
+  }
 }
 
 #theater-info {
@@ -41,6 +48,18 @@
   }
 }
 
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
+  padding: 0 2em 2em 2em;
+}
+
+.info-title {
+  text-align: center;
+}
+
 @media (max-width: 625px) {
   #movie-grid {
     grid-template-columns: 1fr 1fr;
@@ -50,5 +69,8 @@
                          "desc"
                          "2D"
                          "3D";
+  }
+  #theater-info {
+    grid-template-columns: 1fr;
   }
 }
