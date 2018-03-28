@@ -16,15 +16,19 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 // gets movie meta-data based on title from the imbd-api
 app.get('/movie/:title', function (req, res) {
-  imdb.getReq({name: req.params.title}, (err, data) => {
+  imdb.getReq({
+    name: req.params.title
+  }, (err, data) => {
     res.send(data);
   });
 });
 
 // gets movie meta-data based on title from the imbd-api
 app.get('/movie/:title/:year', function (req, res) {
-  imdb.getReq({name: req.params.title,
-              year: req.params.year}, (err, data) => {
+  imdb.getReq({
+    name: req.params.title,
+    year: req.params.year
+  }, (err, data) => {
     res.send(data);
   });
 });
