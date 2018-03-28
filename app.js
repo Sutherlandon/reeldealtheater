@@ -32,4 +32,4 @@ app.get('/movie/:title/:year', function (req, res) {
 // fires up the server to listen on port 3000
 app.listen(3000, function () {
   console.log('ReelDeal running (port: 3000)');
-})
+});
