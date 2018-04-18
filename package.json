@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/Sutherlandon/reeldealtheater/issues"
   },
-  "homepage": "https://github.com/Sutherlandon/reeldealtheater#readme"
+  "homepage": "https://github.com/Sutherlandon/reeldealtheater#readme",
+  "jshintConfig": {
+    "esversion": 6
+  }
 }
